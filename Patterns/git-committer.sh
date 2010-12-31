@@ -1,5 +1,5 @@
 # change the past
-for Y in {2010..2011}
+for Y in {2010..2010}
 do
   mkdir $Y
   cd $Y
@@ -7,7 +7,7 @@ do
   do
     mkdir $M
     cd $M
-    for D in {01..29}
+    for D in {01..31}
     do
       mkdir $D
       cd $D
