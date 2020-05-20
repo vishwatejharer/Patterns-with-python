@@ -3,7 +3,7 @@ for Y in {2020..2020}
 do
   mkdir $Y
   cd $Y
-  for M in {05..5}
+  for M in {04..5}
   do
     mkdir $M
     cd $M
@@ -16,7 +16,7 @@ do
         echo "$i on $M/$D/$Y" > y-pattern.py
         export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
         export GIT_AUTHOR_DATE="$Y-$M-$D 12:$i:00"
-        git add commit.md -f
+        git add y-pattern.py -f
         git commit --date="$Y-$M-$D 12:0$i:00" -m "$i on $M $D $Y"
       done
       cd ../
